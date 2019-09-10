@@ -6,7 +6,7 @@ node {
 
                 stage('Checkout') {
 
-                                git url: 'https://github.com/mviknesh/JAXWS-Maven-WS.git', credentialsId: 'GIT'"
+                                git url: 'https://github.com/mviknesh/JAXWS-Maven-WS.git', credentialsId: 'GIT'
 
                 }
 
