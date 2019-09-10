@@ -32,7 +32,7 @@ node {
 
                                                  Returning true to avoid failure if not exists or running */
 
-            bat label: 'Stop/Remove if exists', returnStatus: true, script: 'docker rm -f jaxws-maven-ws:latest'
+            bat label: 'Stop/Remove if exists', returnStatus: true, script: 'docker rm -f jaxws-maven-ws'
 
         }
 
