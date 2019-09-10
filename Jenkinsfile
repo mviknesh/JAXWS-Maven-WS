@@ -10,7 +10,7 @@ node {
 
                 }
 
-                dir("${WORKSPACE}") {
+                dir("${WORKSPACE}/JAXWS-Maven-WS") {
 
                                 stage('Build') {
 
@@ -38,7 +38,7 @@ node {
 
         stage('Docker Run') {
 
-            bat label: 'Docker Run status', script: 'docker run --name=jaxws-maven-ws -d -p 8083:8083 --env PORT=8083 jaxws-maven-ws:latest'
+            bat label: 'Docker Run status', script: 'docker run --name=jaxws-maven-ws -d -p 8083:8080 jaxws-maven-ws:latest'
 
         }
 

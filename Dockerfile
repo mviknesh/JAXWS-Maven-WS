@@ -17,4 +17,4 @@ ENV PATH="/usr/local/tomcat/bin:/usr/local/scripts:${PATH}"
 #ENTRYPOINT ["bash", "/usr/local/scripts/wardeployer.sh"]
 #ENTRYPOINT ["bash", "nohup /usr/local/tomcat/bin/startup.sh &"]
 CMD ["catalina.sh","run"]
-EXPOSE 8083
+EXPOSE 8080
