@@ -18,3 +18,14 @@ ENV PATH="/usr/local/tomcat/bin:/usr/local/scripts:${PATH}"
 #ENTRYPOINT ["bash", "nohup /usr/local/tomcat/bin/startup.sh &"]
 CMD ["catalina.sh","run"]
 EXPOSE 8080
+
+
+#FROM tomcat:8.0.20-jre8
+#MAINTAINER Sathish <rsahishkumarbe@gmail.com>
+#COPY ./target/*.war /usr/local/tomcat/webapps/BatchMonitorWebservice.war
+#EXPOSE 8082
+
+#FROM jetty
+#MAINTAINER Sathish <rsathishkumarbe@gmail.com>
+#ADD ./target/*.war /var/lib/jetty/webapps/BatchMonitorWebservice.war
+#EXPOSE 8082
