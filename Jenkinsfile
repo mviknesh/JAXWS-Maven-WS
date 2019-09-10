@@ -10,7 +10,7 @@ node {
 
                 }
 
-                dir("${WORKSPACE}/JenkinsMavenProject") {
+                dir("${WORKSPACE}") {
 
                                 stage('Build') {
 
